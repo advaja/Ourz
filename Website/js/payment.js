@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   $.ajax({
     type: 'POST',
-    url: 'https://ourz-mta.herokuapp.com/property/findByID/' + $("#propertyID").html(),
+    url: 'https://ourz-spaces.herokuapp.com/property/findByID/' + $("#propertyID").html(),
     data: {},
     success: function (data) {
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
         finalPrice = data[0].rate
         $("#cityText").html(data[0].city)
         $("#streetText").html(data[0].street)
-         $("#streetNumberText").html(data[0].street_number)
+        $("#streetNumberText").html(data[0].street_number)
         $("#owner_nameText").html(data[0].owner_name)
         $("#owner_phoneText").html(data[0].phone)
         $("#datesText").html(moment(data[0].startDate).format('DD MMMM') + "-" + moment(data[0].endDate).format('DD MMMM'))
@@ -67,7 +67,7 @@ function initPayPalButton() {
 
         $.ajax({
           type: 'POST',
-          url: 'https://ourz-mta.herokuapp.com/property/saveOrder',
+          url: 'https://ourz-spaces.herokuapp.com/property/saveOrder',
           data: {
             propertyID: $("#propertyID").html(),
             userID: localStorage.getItem("userID"),

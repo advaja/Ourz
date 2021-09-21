@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: 'POST',
-        url: 'https://ourz-mta.herokuapp.com/property/getOrderByID/'+localStorage.getItem("userID"),
+        url: 'https://ourz-spaces.herokuapp.com/property/getOrderByID/'+localStorage.getItem("userID"),
         data: {},
         success: function (data) {
 

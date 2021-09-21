@@ -28,10 +28,10 @@ function showPropertyModal(index){
     $("#propertyDescriptionModal").html(propertyData3[index].description)
     $("#propertyPeopleModal").html(propertyData3[index].peoples)
     $("#propertyRateModal").html(propertyData3[index].rate)
-    $("#imagePath1Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath1);
-    $("#imagePath2Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath2);
-    $("#imagePath3Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath3);
-    $("#imagePath4Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath4);
+    $("#imagePath1Modal").attr("src","https://ourz-spaces.herokuapp.com/"+propertyData3[index].imagePath1);
+    $("#imagePath2Modal").attr("src","https://ourz-spaces.herokuapp.com/"+propertyData3[index].imagePath2);
+    $("#imagePath3Modal").attr("src","https://ourz-spaces.herokuapp.com/"+propertyData3[index].imagePath3);
+    $("#imagePath4Modal").attr("src","https://ourz-spaces.herokuapp.com/"+propertyData3[index].imagePath4);
     //$("#propertyPaymentBtn").attr("href", "payment.php?propertyID="+propertyData3[index].propertyID)
 
     $("#showResultModal").modal('show')
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: 'POST',
-        url: 'https://ourz-mta.herokuapp.com/property/latest3',
+        url: 'https://ourz-spaces.herokuapp.com/property/latest3',
         data: {},
         success: function (data) {
 
@@ -59,7 +59,7 @@ $(document).ready(function () {
             
             for (let index = 0; index < data.length; index++) {
                 result += `<div class="col-md-4" style="cursor: pointer;" onclick="showPropertyModal(`+index+`)">
-                <img class="img-fluid" src="https://ourz-mta.herokuapp.com/`+data[index].imagePath1+`" alt="">
+                <img class="img-fluid" src="https://ourz-spaces.herokuapp.com/`+data[index].imagePath1+`" alt="">
                 <p class="section1-p-bold">`+data[index].owner_name+`</p>
                 <p class="section1-p">`+data[index].street_number+` `+data[index].street+` `+data[index].address+`</p>
                 <p class="section1-p-bold">$`+data[index].rate+`/hr</p>
@@ -78,7 +78,7 @@ $(document).ready(function () {
     if (localStorage.getItem("userID")) {
         $("#loginDiv").hide()
         $("#userDiv").show()
-      $("#addPropertyUl").show()
+		$("#addPropertyUl").show()
 
         $("#userNameText").html(localStorage.getItem("first_name"))
     }
@@ -109,7 +109,7 @@ $(document).ready(function () {
         submitHandler: function () {
             $.ajax({
                 type: 'POST',
-                url: 'https://ourz-mta.herokuapp.com/user/login',
+                url: 'https://ourz-spaces.herokuapp.com/user/login',
                 data: {
                     email: $("#email").val(),
                     password: $("#password").val()
@@ -176,7 +176,7 @@ $(document).ready(function () {
         submitHandler: function () {
             $.ajax({
                 type: 'POST',
-                url: 'https://ourz-mta.herokuapp.com/user/register',
+                url: 'https://ourz-spaces.herokuapp.com/user/register',
                 data: {
                     first_name: $("#first_name").val(),
                     last_name: $("#last_name").val(),

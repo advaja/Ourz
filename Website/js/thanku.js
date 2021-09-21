@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: 'POST',
-        url: 'https://ourz-mta.herokuapp.com/property/findByID/'+$("#propertyID").html(),
+        url: 'https://ourz-spaces.herokuapp.com/property/findByID/'+$("#propertyID").html(),
         data: {},
         success: function (data) {
 

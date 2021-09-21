@@ -209,7 +209,7 @@ $(document).ready(function () {
                         type: 'POST',
                         contentType: false,
                         processData: false,
-                        url: 'https://ourz-mta.herokuapp.com/property/add',
+                        url: 'https://ourz-spaces.herokuapp.com/property/add',
                         data: data,
                         success: function (data) {
                             if (data) {
