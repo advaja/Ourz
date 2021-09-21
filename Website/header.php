@@ -38,7 +38,7 @@
         <li class="nav-item">
           <a class="nav-link text-white navbar-link-style" href="find_office.php">Find your office</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" style="display: none;" id="addPropertyUl">
           <a class="nav-link text-white navbar-link-style" href="share-space.php">Become a host</a>
         </li>
         <li class="nav-item">

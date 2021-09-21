@@ -25,6 +25,7 @@ $('#endTimePicker').timepicker({
 });
 
 $('#dateRangePicker').daterangepicker({
+    minDate:new Date(),
     autoUpdateInput: false,
     locale: {
         cancelLabel: 'Clear'
@@ -203,36 +204,40 @@ $(document).ready(function () {
                 data.append("imageUpload3", document.getElementById('imageUpload3').files[0]);
                 data.append("imageUpload4", document.getElementById('imageUpload4').files[0]);
 
-                $.ajax({
-                    type: 'POST',
-                    contentType: false,
-                    processData: false,
-                    url: 'http://localhost:3000/property/add',
-                    data: data,
-                    success: function (data) {
-                        if (data) {
-
-                            if (data.affectedRows) {
-
-                                toastr.success("Your space has been added");
-
-                                $("#shareSpaceModal").modal('show')
-
+                if (localStorage.getItem("userID")) {
+                    $.ajax({
+                        type: 'POST',
+                        contentType: false,
+                        processData: false,
+                        url: 'https://ourz-mta.herokuapp.com/property/add',
+                        data: data,
+                        success: function (data) {
+                            if (data) {
+    
+                                if (data.affectedRows) {
+    
+                                    toastr.success("Your space has been added");
+    
+                                    $("#shareSpaceModal").modal('show')
+    
+                                } else {
+                                    toastr.error("Space not added");
+                                }
+    
                             } else {
-                                toastr.error("Space not added");
+    
+                                toastr.error(data);
+    
                             }
-
-                        } else {
-
-                            toastr.error(data);
-
+                        },
+                        error: function (data) {
+                            console.log(data)
+                            toastr.error('Something went wrong.Please check the browser console for the error!');
                         }
-                    },
-                    error: function (data) {
-                        console.log(data)
-                        toastr.error('Something went wrong.Please check the browser console for the error!');
-                    }
-                });
+                    });
+                } else {
+                  toastr.error('Please login to add your space');
+                }
 
             } else {
                 toastr.error("Please select correct address");

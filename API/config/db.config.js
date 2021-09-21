@@ -1,14 +1,11 @@
-'use strict';
-const mysql = require('mysql');
+"use strict";
+const mysql = require("mysql");
 //local mysql db connection
-const dbConn = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'ourz_db'
+const dbConn = mysql.createPool({
+  host: "us-cdbr-east-04.cleardb.com",
+  user: "b3bb53c302db49",
+  password: "a635c1e8",
+  database: "heroku_d496c577474afaf",
 });
-dbConn.connect(function(err) {
-  if (err) throw err;
-  console.log("Database Connected!");
-});
+
 module.exports = dbConn;

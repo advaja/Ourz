@@ -87,9 +87,20 @@
         </div>
       </div>
       <div class="col-8" style="text-align: right;">
+      <div class="row">
+        <div class="col-lg-4">
         <a href="privacy-policy.php" class="footer-text footer-text-margin">PRIVACY POLICY</a>
+        </div>
+        <div class="col-lg-4">
         <a href="term-condotion.php" class="footer-text footer-text-margin">TERMS & CONDITIONS</a>
+        </div>
+        <div class="col-lg-4">
         <a href="faq.php" class="footer-text footer-text-margin">FAQ</a>
+        </div>
+      </div>
+       
+        
+        
       </div>
     </div>
   </div>

@@ -48,6 +48,7 @@ $totalHours = $_GET['totalHours'];
           <p class="section10-p-bold">
             Before you pay, make sure all details are correct:<br>
             City: <span id="cityText"></span><br>
+            Street Number: <span id="streetNumberText"></span><br>
             Street: <span id="streetText"></span><br>
             Owner info: <span id="owner_nameText"></span><br>
             Contact number: <span id="owner_phoneText"></span><br>

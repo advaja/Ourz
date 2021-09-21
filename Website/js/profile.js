@@ -34,7 +34,7 @@ $(document).ready(function () {
         submitHandler: function () {
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:3000/user/update',
+                url: 'https://ourz-mta.herokuapp.com/user/update',
                 data: {
                     userID: localStorage.getItem("userID"),
                     first_name: $("#first_name3").val(),

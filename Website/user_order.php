@@ -7,7 +7,7 @@
 <div class="banner-image w-100 d-flex justify-content-center align-items-center"
   style="background: linear-gradient( rgb(0 0 0 / 28%), rgb(0 0 0 / 48%) ), url(../img/banner8.png);background-position: left;margin-bottom: 80px;height: 50vh;">
   <div class="content text-center">
-    <h1 class="text-white banner-h1">User Orders</h1>
+    <h1 class="text-white banner-h1" style="font-size: 60px;">User Orders</h1>
   </div>
 </div>
 
@@ -16,7 +16,7 @@
   <div class="row">
     <div class="col-12 m-auto">
 
-      <div class="table-responsive">
+      <div class="table-responsive" style="width: 100vw;overflow: auto;">
         <table class="table">
           <thead>
             <tr>
@@ -32,11 +32,13 @@
               <th scope="col">Total Peoples</th>
               <th scope="col">Payment ID</th>
               <th scope="col">Payment Date</th>
+              <th scope="col">Payment Time</th>
             </tr>
           </thead>
           <tbody id="orderTableData">
             <tr>
               <th scope="row"></th>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>

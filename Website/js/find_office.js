@@ -7,10 +7,10 @@ function showPropertyModal(index){
     $("#propertyDescriptionModal1").html(findPropertyData[index].description)
     $("#propertyPeopleModal1").html(findPropertyData[index].peoples)
     $("#propertyRateModal1").html(findPropertyData[index].rate)
-    $("#imagePath11Modal").attr("src","http://localhost:3000/"+propertyData3[index].imagePath1);
-    $("#imagePath12Modal").attr("src","http://localhost:3000/"+propertyData3[index].imagePath2);
-    $("#imagePath13Modal").attr("src","http://localhost:3000/"+propertyData3[index].imagePath3);
-    $("#imagePath14Modal").attr("src","http://localhost:3000/"+propertyData3[index].imagePath4);
+    $("#imagePath11Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath1);
+    $("#imagePath12Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath2);
+    $("#imagePath13Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath3);
+    $("#imagePath14Modal").attr("src","https://ourz-mta.herokuapp.com/"+propertyData3[index].imagePath4);
     //$("#propertyPayment1Btn").attr("href", "payment.php?propertyID="+propertyData3[index].propertyID)
 
     $("#showResultModal1").modal('show')
@@ -59,7 +59,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:3000/property/find',
+                url: 'https://ourz-mta.herokuapp.com/property/find',
                 data: {
                     street: $("#street").val(),
                     street_number: $("#street_number").val(),
@@ -99,7 +99,7 @@ $(document).ready(function () {
                                 ` + data[index].rate + `$/Hour</a>
                               </div>
                               <div class="col-6">
-                                <img class="section9-img" src="http://localhost:3000/`+data[index].imagePath1+`" alt="">
+                                <img class="section9-img" src="https://ourz-mta.herokuapp.com/`+data[index].imagePath1+`" alt="">
                               </div>
                             </div>
                 

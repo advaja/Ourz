@@ -233,7 +233,7 @@
         <p class="section9-p-bold mb-2" id="propertyNameModal1"></p>
           <p class="section9-p mb-2" id="propertyDescriptionModal1"></p>
           <p class="section9-p-bold mb-2"><span id="propertyPeopleModal1"></span> guests</p>
-          <input type="number" class="form-control mb-3" style="width: 80%;" id="room_hours_needed1" placeholder="Total Hours Needed ">
+          <input type="number" class="form-control mb-3" style="width: 80%;" min="1" value="1" id="room_hours_needed1" placeholder="Total Hours Needed ">
           <button id="propertyPayment1Btn" class="btn text-white custom-btn">Book for <span
               id="propertyRateModal1"></span>$/Hour</button>
         </div>
@@ -275,7 +275,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBZ5FtsN2n8WXExBpj2QKdLYmbwrLzMDLY"
+<script src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBZ5FtsN2n8WXExBpj2QKdLYmbwrLzMDLY"
   type="text/javascript"></script>
 <script src="js/find_office.js"></script>
 
@@ -289,6 +289,7 @@
 });
 
   $('#dateRangePicker').daterangepicker({
+    minDate:new Date(),
     autoUpdateInput: false,
     locale: {
       cancelLabel: 'Clear'

@@ -1,5 +1,4 @@
 <?php include "header.php" ?>
-
 <!-- Banner Image  -->
 <div class="banner-image w-100 d-flex justify-content-center align-items-center"
       style="background: linear-gradient( rgb(0 0 0 / 28%), rgb(0 0 0 / 48%) ), url(../img/banner7.png);background-position: left;margin-bottom: 80px;height: 48vh;">

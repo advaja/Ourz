@@ -176,7 +176,7 @@
           <p class="section9-p mb-2" id="propertyDescriptionModal"></p>
           <p class="section9-p-bold mb-2"><span id="propertyPeopleModal"></span> guests</p>
           <input type="number" class="form-control mb-3" style="width: 80%;" id="room_hours_needed"
-            placeholder="Total Hours Needed ">
+            placeholder="Total Hours Needed " min="1" value="1">
           <button id="propertyPaymentBtn" class="btn text-white custom-btn">Book for <span
               id="propertyRateModal"></span>$/Hour</button>
         </div>
