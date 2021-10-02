@@ -47,7 +47,7 @@
 
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input custom-checkbox" id="exampleCheck1">
-          <label class="text-white form-check-label" for="exampleCheck1">I agre to Ourz Terms & Conditions</label>
+          <label class="text-white form-check-label" for="exampleCheck1">I agree to Ourz Terms & Conditions</label>
         </div>
 
         <div class="mb-3">
@@ -65,9 +65,9 @@
           <h5 class="text-white section1-p-bold" style="text-align: right;">Ourz on social</h5>
         </div>
         <div class="col-6 text-white" style="text-align: left;padding-left: 20px;border-left: 1px solid white;">
-        <a href="#" class="text-white" target="_blank"> <i class="fa fa-facebook-square fa-style"></i></a>
-        <a href="#" class="text-white" target="_blank"><i class="fa fa-instagram fa-style"></i></a>
-        <a href="#" class="text-white" target="_blank"><i class="fa fa-linkedin-square fa-style"></i></a>
+        <a href="https://www.facebook.com/Ourz-101564958954893/" class="text-white" target="_blank"> <i class="fa fa-facebook-square fa-style"></i></a>
+        <a href="https://www.instagram.com/ourz_inc/" class="text-white" target="_blank"><i class="fa fa-instagram fa-style"></i></a>
+        <a href="https://www.linkedin.com/company/weareourz/" class="text-white" target="_blank"><i class="fa fa-linkedin-square fa-style"></i></a>
         </div>
       </div>
     </div>
@@ -81,9 +81,9 @@
       <div class="col-4">
         <a class="footer-text">FOLLOW US</a>
         <div style="margin-top: 20px;">
-          <a href="#" class="text-dark" target="_blank"><i class="fa fa-facebook-square fa-style"></i></a>
-          <a href="#" class="text-dark" target="_blank"><i class="fa fa-instagram fa-style"></i></a>
-          <a href="#" class="text-dark" target="_blank"><i class="fa fa-linkedin-square fa-style"></i></a>
+          <a href="https://www.facebook.com/Ourz-101564958954893/" class="text-dark" target="_blank"><i class="fa fa-facebook-square fa-style"></i></a>
+          <a href="https://www.instagram.com/ourz_inc/" class="text-dark" target="_blank"><i class="fa fa-instagram fa-style"></i></a>
+          <a href="https://www.linkedin.com/company/weareourz/" class="text-dark" target="_blank"><i class="fa fa-linkedin-square fa-style"></i></a>
         </div>
       </div>
       <div class="col-8" style="text-align: right;">

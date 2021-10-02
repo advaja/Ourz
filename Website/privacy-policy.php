@@ -4,8 +4,9 @@
 <div class="banner-image w-100 d-flex justify-content-center align-items-center"
   style="background: linear-gradient( rgb(0 0 0 / 28%), rgb(0 0 0 / 48%) ), url(../img/banner7.png);background-position: left;margin-bottom: 80px;height: 48vh;">
   <div class="content text-center">
-    <h1 class="text-white banner-h1">PRIVACY</h1>
-    <h1 class="text-white banner-h1-second">POLICY</h1>
+    <br> <br>
+    <h1 class="text-white banner-h1">Privacy</h1>
+    <h1 class="text-white banner-h1-second">Policy</h1>
   </div>
 </div>
 
@@ -18,7 +19,7 @@
 
       <h1 class="section10-heading" style="margin-bottom: 0px;text-align: center;">Welcom to Ourz Privacy Policy</h1>
 
-      <p class="section10-p" style="margin-bottom: 0px;text-align: center;">Last updated: July 27, 2021</p>
+      <p class="section10-p" style="margin-bottom: 0px;text-align: center;">Last updated: October 4, 2021</p>
     </div>
 
   </div>

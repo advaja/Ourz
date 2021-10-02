@@ -53,15 +53,16 @@ $totalHours = $_GET['totalHours'];
             Owner info: <span id="owner_nameText"></span><br>
             Contact number: <span id="owner_phoneText"></span><br>
             Room Hours Needed: <span id="totalHours"><?php echo $totalHours; ?></span><br>
-            <span id="datesText"></span>, <span id="timeText"></span>
+            
           </p>
         </div>
 
         <div class="col-md-6">
           <p class="section10-p-bold mb-3">
-            Pay securely with paypal</p>
+            We are working on adding a credit card payment option. <br>
+			For now you can pay securley with PayPal.</p>
           <p class="section10-p-bold mb-3">
-            For Paypal click here
+            For Paypal click here:
           </p>
 
           <div id="smart-button-container">

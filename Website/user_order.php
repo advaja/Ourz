@@ -24,8 +24,8 @@
               <th scope="col">Owner Name</th>
               <th scope="col">Owner Phone #</th>
               <th scope="col">Address</th>
-              <th scope="col">Dates</th>
-              <th scope="col">Times</th>
+              <!--<th scope="col">Dates</th>
+              <th scope="col">Times</th>-->
               <th scope="col">Hourly Rate</th>
               <th scope="col">Total Hours</th>
               <th scope="col">Total Payment</th>

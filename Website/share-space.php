@@ -21,7 +21,7 @@
         <div class="row">
 
           <div class="col-12">
-            <input type="text" class="form-control mb-3" placeholder="Contact full name" id="owner_name"
+            <input type="text" class="form-control mb-3" placeholder="Contact name - Office name" id="owner_name"
               name="owner_name">
           </div>
 
@@ -73,7 +73,7 @@
           </div>
 
           <div class="col-md-4 col-6">
-            <input type="text" class="form-control mb-3" placeholder="Contact Phone" id="owner_phone"
+          	<input type="tel" class="form-control mb-3" placeholder="Contact Phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" id="owner_phone"
               name="owner_phone">
           </div>
 
@@ -85,43 +85,47 @@
           <div class="row" style="margin: 0;">
 
             <div class="col-md-3" style="padding: 0;">
-              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;">
+              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;" id="uploadImageDiv1">
                 <i class="fa fa-camera" id="uploadDesign1" style="color: gray;font-size: 80px;"></i>
-                <p style="color: gray;">Add a photo</p>
+                <p style="color: gray;">Add a photo (required)</p>
 
-                <input id="imageUpload1" type="file" name="imageUpload1" placeholder="Photo" required="" capture
-                  style="width: 0;">
+                <input id="imageUpload1" type="file" name="imageUpload1" placeholder="Photo" capture
+                  style="width: 0;" onchange="loadFile1(event)">
               </div>
+              <img class="img-fluid" id="showImage1" style="display:hidden;height: 100%;">
             </div>
 
             <div class="col-md-3" style="padding: 0;">
-              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;">
+              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;" id="uploadImageDiv2">
                 <i class="fa fa-camera" id="uploadDesign2" style="color: gray;font-size: 80px;"></i>
-                <p style="color: gray;">Add a photo</p>
+                <p style="color: gray;">Add a photo(optional)</p>
 
-                <input id="imageUpload2" type="file" name="imageUpload2" placeholder="Photo" required="" capture
-                  style="width: 0;">
+                <input id="imageUpload2" type="file" name="imageUpload2" placeholder="Photo" capture
+                  style="width: 0;" onchange="loadFile2(event)">
               </div>
+              <img class="img-fluid" id="showImage2" style="display:hidden;height: 100%;">
             </div>
 
             <div class="col-md-3" style="padding: 0;">
-              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;">
+              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;" id="uploadImageDiv3">
                 <i class="fa fa-camera" id="uploadDesign3" style="color: gray;font-size: 80px;"></i>
-                <p style="color: gray;">Add a photo</p>
+                <p style="color: gray;">Add a photo(optional)</p>
 
-                <input id="imageUpload3" type="file" name="imageUpload3" placeholder="Photo" required="" capture
-                  style="width: 0;">
+                <input id="imageUpload3" type="file" name="imageUpload3" placeholder="Photo" capture
+                  style="width: 0;" onchange="loadFile3(event)">
               </div>
+              <img class="img-fluid" id="showImage3" style="display:hidden;height: 100%;">
             </div>
 
             <div class="col-md-3" style="padding: 0;">
-              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;">
+              <div class="card p-4" style="background: #EBEBEB;border: 1px solid #EBEBEB;text-align: center;" id="uploadImageDiv4">
                 <i class="fa fa-camera" id="uploadDesign4" style="color: gray;font-size: 80px;"></i>
-                <p style="color: gray;">Add a photo</p>
+                <p style="color: gray;">Add a photo(optional)</p>
 
-                <input id="imageUpload4" type="file" name="imageUpload4" placeholder="Photo" required="" capture
-                  style="width: 0;">
+                <input id="imageUpload4" type="file" name="imageUpload4" placeholder="Photo" capture
+                  style="width: 0;" onchange="loadFile4(event)">
               </div>
+              <img class="img-fluid" id="showImage4" style="display:hidden;height: 100%;">
             </div>
 
           </div>
@@ -156,6 +160,6 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ5FtsN2n8WXExBpj2QKdLYmbwrLzMDLY&libraries=places&callback=initAutocomplete"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ5FtsN2n8WXExBpj2QKdLYmbwrLzMDLY&libraries=places&language=en&callback=initAutocomplete"
   async defer></script>
 <script src="js/add_property.js"></script>

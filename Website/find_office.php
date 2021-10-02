@@ -31,8 +31,23 @@
                 <option value="Acre">Acre</option>
                 <option value="Afula">Afula</option>
                 <option value="Arad">Arad</option>
-                <option value="Ra'anana">Ra'anana</option>
+                <option value="Ashkelon">Ashkelon</option>
+                <option value="Ashdod">Ashdod</option>
+                <option value="Bat Yam">Bat Yam</option>
+                <option value="Beersheba">Beersheba</option>
+                <option value="Caesarea">Caesarea</option>
+                <option value="Givatayim">Givatayim</option>
+                <option value="Holon">Holon</option>
+                <option value="Herzliya">Herzliya</option>
+                <option value="Jerusalem">Jerusalem</option>
+                <option value="Kfar Saba">Kfar Saba</option>
+                <option value="Nazareth">Nazareth</option>
+                <option value="Netanya">Netanya</option>
+                <option value="Ra'anana">Raanana</option>
+                <option value="Ramat Gan">Ramat Gan</option>
                 <option value="Tel Aviv-Yafo">Tel Aviv-Yafo</option>
+                <option value="Tel Aviv">Tel Aviv</option>
+                <option value="Eilat">Eilat</option>
               </select>
             </div>
 
@@ -58,7 +73,7 @@
 
             <div class="col-md-4 col-6">
               <select class="form-select mb-3" id="peoples" name="peoples">
-                <option value="" disabled selected>How many people?</option>
+                <option value="" disabled selected>How many people?(optional)</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -73,14 +88,9 @@
             </div>
 
             <div class="col-md-4 col-6">
-              <input type="text" class="form-control mb-3" placeholder="Enter a budget" id="rate" name="rate">
+              <input type="text" class="form-control mb-3" placeholder="Enter a budget(optional)" id="rate" name="rate">
             </div>
 
-            <!--<div class="col-lg-3 col-md-4 col-6">
-            <div class="range" style="margin-top: 12px;">
-              <input type="range" class="form-range mb-3" min="0" max="100" step="1" id="customRange3">
-            </div>
-          </div>-->
 
             <div class="col-md-4 col-6">
               <button type="submit" class="btn btn-primary form-control custom-btn mb-3">SEARCH</button>
@@ -111,110 +121,7 @@
       <div class="col-12">
 
         <div class="row" id="findpropertyResult">
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The grey officee</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <a data-bs-toggle="modal" data-bs-target="#showResultModal" class="btn text-white custom-btn">Book for
-                  10$/Hour</a>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 9.png" alt="">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The grey office</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <button class="btn text-white custom-btn">Book for 10$/Hour</button>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 9.png" alt="">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The brown office</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <button class="btn text-white custom-btn">Book for 10$/Hour</button>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 10.png" alt="">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The brown office</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <button class="btn text-white custom-btn">Book for 10$/Hour</button>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 10.png" alt="">
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The green office</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <button class="btn text-white custom-btn">Book for 10$/Hour</button>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 11.png" alt="">
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-md-6 mb-3">
-
-            <div class="row">
-              <div class="col-6">
-                <p class="section9-p-bold mb-2">The green office</p>
-                <p class="section9-p mb-2">porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus
-                  hendrerit et. Sed lacinia finibus eros egestas eleifend. Curabitur sed dolor justo egestas lacus. </p>
-                <p class="section9-p-bold mb-2">3 guests</p>
-                <a class="btn text-white custom-btn">Book for 10$/Hour</a>
-              </div>
-              <div class="col-6">
-                <img class="section9-img" src="img/Layer 11.png" alt="">
-              </div>
-            </div>
-
-          </div>
+          
 
         </div>
 
@@ -233,23 +140,24 @@
         <p class="section9-p-bold mb-2" id="propertyNameModal1"></p>
           <p class="section9-p mb-2" id="propertyDescriptionModal1"></p>
           <p class="section9-p-bold mb-2"><span id="propertyPeopleModal1"></span> guests</p>
-          <input type="number" class="form-control mb-3" style="width: 80%;" min="1" value="1" id="room_hours_needed1" placeholder="Total Hours Needed ">
+           
+          <input type="number" class="form-control mb-3" style="width: 80%;" min="0.5" value="0.5" step="0.5" id="room_hours_needed1" placeholder="Total Hours Needed ">
           <button id="propertyPayment1Btn" class="btn text-white custom-btn">Book for <span
               id="propertyRateModal1"></span>$/Hour</button>
         </div>
         <div class="col-6">
         <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" id="imageItem11Modal">
                 <img id="imagePath11Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem12Modal">
                 <img id="imagePath12Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem13Modal">
                 <img id="imagePath13Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem14Modal">
                 <img id="imagePath14Modal" class="d-block w-100" alt="...">
               </div>
             </div>
@@ -278,29 +186,3 @@
 <script src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyBZ5FtsN2n8WXExBpj2QKdLYmbwrLzMDLY"
   type="text/javascript"></script>
 <script src="js/find_office.js"></script>
-
-<script>
-  $('#startTimePicker').timepicker({
-    timeFormat: 'HH:mm:ss',
-});
-
-  $('#endTimePicker').timepicker({
-    timeFormat: 'HH:mm:ss',
-});
-
-  $('#dateRangePicker').daterangepicker({
-    minDate:new Date(),
-    autoUpdateInput: false,
-    locale: {
-      cancelLabel: 'Clear'
-    }
-  });
-
-  $('#dateRangePicker').on('apply.daterangepicker', function (ev, picker) {
-    $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-  });
-
-  $('#dateRangePicker').on('cancel.daterangepicker', function (ev, picker) {
-    $(this).val('');
-  });
-</script>

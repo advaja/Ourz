@@ -1,5 +1,5 @@
-"use strict";
-const User = require("../models/user.model");
+'use strict';
+const User = require('../models/user.model');
 
 exports.login = function (req, res) {
   User.login(req.body, function (err, user) {

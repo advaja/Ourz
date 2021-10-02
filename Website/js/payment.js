@@ -1,4 +1,5 @@
 var finalPrice = 0;
+var host = "https://ourz-spaces.herokuapp.com";
 
 $(document).ready(function () {
 
@@ -13,7 +14,7 @@ $(document).ready(function () {
 
   $.ajax({
     type: 'POST',
-    url: 'https://ourz-spaces.herokuapp.com/property/findByID/' + $("#propertyID").html(),
+    url: host+'/property/findByID/' + $("#propertyID").html(),
     data: {},
     success: function (data) {
 
@@ -67,7 +68,7 @@ function initPayPalButton() {
 
         $.ajax({
           type: 'POST',
-          url: 'https://ourz-spaces.herokuapp.com/property/saveOrder',
+          url: host+'/property/saveOrder',
           data: {
             propertyID: $("#propertyID").html(),
             userID: localStorage.getItem("userID"),

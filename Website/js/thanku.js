@@ -1,4 +1,5 @@
 var finalPrice = 0;
+var host = "https://ourz-spaces.herokuapp.com";
 
 $(document).ready(function () {
 
@@ -10,7 +11,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: 'POST',
-        url: 'https://ourz-spaces.herokuapp.com/property/findByID/'+$("#propertyID").html(),
+        url: host+'/property/findByID/'+$("#propertyID").html(),
         data: {},
         success: function (data) {
 

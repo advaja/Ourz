@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-const Property = require("../models/property.model");
-var multiparty = require("multiparty");
+const Property = require('../models/property.model');
+var multiparty = require('multiparty');
 
 exports.add = function (req, res) {
   var form = new multiparty.Form();
@@ -48,8 +48,8 @@ exports.saveOrder = function (req, res) {
   });
 };
 
-exports.getOrderByUserID = function (req, res) {
-  Property.getOrderByUserID(req.params.id, function (err, property) {
+exports.getOrderByID = function (req, res) {
+  Property.getOrderByID(req.params.id, function (err, property) {
     if (err) res.send(err);
     res.json(property);
   });

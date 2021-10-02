@@ -1,3 +1,5 @@
+var host = "https://ourz-spaces.herokuapp.com";
+
 $(document).ready(function () {
 
     if (localStorage.getItem("userID")) {
@@ -34,7 +36,7 @@ $(document).ready(function () {
         submitHandler: function () {
             $.ajax({
                 type: 'POST',
-                url: 'https://ourz-spaces.herokuapp.com/user/update',
+                url: host+'/user/update',
                 data: {
                     userID: localStorage.getItem("userID"),
                     first_name: $("#first_name3").val(),

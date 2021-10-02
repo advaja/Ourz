@@ -1,5 +1,8 @@
 var address = {};
 
+var host = "https://ourz-spaces.herokuapp.com";
+
+
 $("#uploadDesign1").click(function (e) {
     $("#imageUpload1").click();
 });
@@ -114,8 +117,55 @@ function geolocate() {
         });
     }
 }
+var loadFile1 = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('showImage1');
+      output.src = reader.result;
+      $("#showImage1").show();
+      $("#uploadImageDiv1").hide();
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+
+  var loadFile2 = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('showImage2');
+      output.src = reader.result;
+      $("#showImage2").show();
+      $("#uploadImageDiv2").hide();
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+
+  var loadFile3 = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('showImage3');
+      output.src = reader.result;
+      $("#showImage3").show();
+      $("#uploadImageDiv3").hide();
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+
+  var loadFile4 = function(event) {
+    var reader = new FileReader();
+    reader.onload = function(){
+      var output = document.getElementById('showImage4');
+      output.src = reader.result;
+      $("#showImage4").show();
+      $("#uploadImageDiv4").hide();
+    };
+    reader.readAsDataURL(event.target.files[0]);
+  };
+
 
 $(document).ready(function () {
+
+   
+
     $("form[id='propertyForm']").validate({
         rules: {
             owner_name: {
@@ -150,16 +200,16 @@ $(document).ready(function () {
             },
             imageUpload1: {
                 required: true,
-            },
+            }/*,
             imageUpload2: {
                 required: true,
             },
-            imageUpload3: {
+              imageUpload3: {
                 required: true,
             },
             imageUpload4: {
                 required: true,
-            }
+            }*/
         },
         messages: {
             owner_name: "Please enter owner name",
@@ -172,10 +222,10 @@ $(document).ready(function () {
             rate: "Please enter hourly rate",
             owner_phone: "Please enter phone number",
             description: "Please enter description",
-            imageUpload1: "Please upload a photo",
+            imageUpload1: "Please upload a photo"/*,
             imageUpload2: "Please upload a photo",
             imageUpload3: "Please upload a photo",
-            imageUpload4: "Please upload a photo"
+            imageUpload4: "Please upload a photo"*/
         },
         submitHandler: function () {
 
@@ -209,7 +259,7 @@ $(document).ready(function () {
                         type: 'POST',
                         contentType: false,
                         processData: false,
-                        url: 'https://ourz-spaces.herokuapp.com/property/add',
+                        url: host+'/property/add',
                         data: data,
                         success: function (data) {
                             if (data) {

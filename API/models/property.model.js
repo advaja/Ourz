@@ -1,11 +1,11 @@
-"use strict";
-var dbConn = require("./../config/db.config");
+'use strict';
+var dbConn = require('./../config/db.config');
 
 const fs = require(`fs`);
-const multer = require("multer");
+const multer = require('multer');
 
 const upload = multer({
-  dest: "uploads/",
+  dest: 'uploads/',
 });
 
 //Property object create
@@ -47,7 +47,7 @@ Property.add = function (property, files, result) {
   for (let i = 0; i < filesArray.length; i++) {
     const file = filesArray[i][0];
 
-    const filename = "uploads/" + new Date().getTime() + file.originalFilename;
+    const filename = 'uploads/' + new Date().getTime() + file.originalFilename;
 
     filenames.push(filename);
 
@@ -55,8 +55,24 @@ Property.add = function (property, files, result) {
     fs.writeFileSync(filename, fileData);
   }
 
+  if (!filenames[1]) {
+    filenames[1] = '';
+  }
+
+  if (!filenames[2]) {
+    filenames[2] = '';
+  }
+
+  if (!filenames[3]) {
+    filenames[3] = '';
+  }
+
+  if (!filenames[4]) {
+    filenames[4] = '';
+  }
+
   dbConn.query(
-    "INSERT INTO property (`owner_name`, `address`, `city`, `lat`, `lng`, `street`, `street_number`, `startDate`, `endDate`, `time1`, `time2`, `peoples`, `rate`, `phone`, `description`, `imagePath1`, `imagePath2`, `imagePath3`, `imagePath4`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+    'INSERT INTO property (`owner_name`, `address`, `city`, `lat`, `lng`, `street`, `street_number`, `startDate`, `endDate`, `time1`, `time2`, `peoples`, `rate`, `phone`, `description`, `imagePath1`, `imagePath2`, `imagePath3`, `imagePath4`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
     [
       property.owner_name[0],
       property.address[0],
@@ -90,7 +106,7 @@ Property.add = function (property, files, result) {
 
 Property.latest3 = function (result) {
   dbConn.query(
-    "SELECT * FROM `property` order by propertyID DESC limit 3",
+    'SELECT * FROM `property` order by propertyID DESC limit 3',
     function (err, res) {
       if (err) {
         result(null, err);
@@ -102,104 +118,63 @@ Property.latest3 = function (result) {
 };
 
 Property.find = function (property, result) {
-  if (property.street_number && property.street) {
-    dbConn.query(
-      "SELECT * FROM `property` where startDate <= ? AND endDate>= ? AND time1 <= ? AND time2 >= ? AND city = ? AND peoples >= ? AND rate <= ? AND street = ? AND street_number = ?",
-      [
-        property.startDate,
-        property.endDate,
-        property.time1,
-        property.time2,
-        property.city,
-        property.peoples,
-        property.rate,
-        property.street,
-        property.street_number,
-      ],
-      function (err, res) {
-        if (err) {
-          console.log("error: ", err);
-          result(err, null);
+  var dataBaseCondition = '';
+  var dataBaseValue = [];
+  var index = 0;
+  Object.keys(property).forEach(function (e) {
+    if (property[e]) {
+      if (index == 0) {
+        if (e == 'startDate') {
+          dataBaseCondition += e + ' <= ?';
+        } else if (e == 'endDate') {
+          dataBaseCondition += e + ' >= ?';
+        } else if (e == 'time1') {
+          dataBaseCondition += e + ' <= ?';
+        } else if (e == 'time2') {
+          dataBaseCondition += e + ' >= ?';
+        } else if (e == 'rate') {
+          dataBaseCondition += e + ' <= ?';
         } else {
-          console.log("property : ", res);
-          result(null, res);
+          dataBaseCondition += e + ' = ?';
+        }
+      } else {
+        if (e == 'startDate') {
+          dataBaseCondition += ' AND ' + e + ' <= ?';
+        } else if (e == 'endDate') {
+          dataBaseCondition += ' AND ' + e + ' >= ?';
+        } else if (e == 'time1') {
+          dataBaseCondition += ' AND ' + e + ' <= ?';
+        } else if (e == 'time2') {
+          dataBaseCondition += ' AND ' + e + ' >= ?';
+        } else if (e == 'rate') {
+          dataBaseCondition += ' AND ' + e + ' <= ?';
+        } else {
+          dataBaseCondition += ' AND ' + e + ' = ?';
         }
       }
-    );
-  } else if (property.street) {
-    dbConn.query(
-      "SELECT * FROM `property` where startDate <= ? AND endDate>= ? AND time1 <= ? AND time2 >= ? AND city = ? AND peoples >= ? AND rate <= ? AND street = ?",
-      [
-        property.startDate,
-        property.endDate,
-        property.time1,
-        property.time2,
-        property.city,
-        property.peoples,
-        property.rate,
-        property.street,
-      ],
-      function (err, res) {
-        if (err) {
-          console.log("error: ", err);
-          result(err, null);
-        } else {
-          console.log("property : ", res);
-          result(null, res);
-        }
+
+      dataBaseValue.push(property[e]);
+      index++;
+    }
+  });
+
+  dbConn.query(
+    'SELECT * FROM `property` where ' + dataBaseCondition,
+    dataBaseValue,
+    function (err, res) {
+      if (err) {
+        console.log('error: ', err);
+        result(err, null);
+      } else {
+        result(null, res);
       }
-    );
-  } else if (property.street_number) {
-    dbConn.query(
-      "SELECT * FROM `property` where startDate <= ? AND endDate>= ? AND time1 <= ? AND time2 >= ? AND city = ? AND peoples >= ? AND rate <= ? AND street_number = ?",
-      [
-        property.startDate,
-        property.endDate,
-        property.time1,
-        property.time2,
-        property.city,
-        property.peoples,
-        property.rate,
-        property.street_number,
-      ],
-      function (err, res) {
-        if (err) {
-          console.log("error: ", err);
-          result(err, null);
-        } else {
-          console.log("property : ", res);
-          result(null, res);
-        }
-      }
-    );
-  } else {
-    dbConn.query(
-      "SELECT * FROM `property` where startDate <= ? AND endDate>= ? AND time1 <= ? AND time2 >= ? AND city = ? AND peoples >= ? AND rate <= ?",
-      [
-        property.startDate,
-        property.endDate,
-        property.time1,
-        property.time2,
-        property.city,
-        property.peoples,
-        property.rate,
-      ],
-      function (err, res) {
-        if (err) {
-          console.log("error: ", err);
-          result(err, null);
-        } else {
-          console.log("property : ", res);
-          result(null, res);
-        }
-      }
-    );
-  }
+    }
+  );
 };
 
 Property.findById = function (id, result) {
   dbConn.query(
-    "Select * from property where propertyID = ? ",
+    'Select * from property where propertyID = ? ',
     id,
     function (err, res) {
       if (err) {
@@ -213,7 +188,7 @@ Property.findById = function (id, result) {
 
 Property.saveOrder = function (orderData, result) {
   dbConn.query(
-    "INSERT INTO user_orders (`propertyID`, `userID`, `paymentID`, `totalHours`) VALUES ( ?, ?, ?, ?)",
+    'INSERT INTO user_orders (`propertyID`, `userID`, `paymentID`, `totalHours`) VALUES ( ?, ?, ?, ?)',
     [
       orderData.propertyID,
       orderData.userID,
@@ -224,15 +199,25 @@ Property.saveOrder = function (orderData, result) {
       if (err) {
         result(null, err);
       } else {
-        result(null, res);
+        dbConn.query(
+          "UPDATE property SET isBooked='1' WHERE propertyID = ?",
+          [orderData.propertyID],
+          function (err, res) {
+            if (err) {
+              result(null, err);
+            } else {
+              result(null, res);
+            }
+          }
+        );
       }
     }
   );
 };
 
-Property.getOrderByUserID = function (id, result) {
+Property.getOrderByID = function (id, result) {
   dbConn.query(
-    "SELECT * FROM `user_orders` join user on user.userID=user_orders.userID join property on property.propertyID=user_orders.propertyID Where user_orders.userID=? ",
+    'SELECT * FROM `user_orders` join user on user.userID=user_orders.userID join property on property.propertyID=user_orders.propertyID Where user_orders.userID=? ',
     id,
     function (err, res) {
       if (err) {

@@ -27,7 +27,7 @@
   <div class="row">
     <div class="col-12">
 
-      <h1 class="section-heading">Productive environments</h1>
+      <h1 class="section-heading">Productive Environments</h1>
 
       <div class="row" id="latest3property">
 
@@ -41,7 +41,7 @@
 
       <h1 class="section-heading">Become one of Ourz</h1>
       <div class="section2-visitor-margin">
-        <a class="btn text-white visitor-btn" id="visitor-btn">Visitor</a>
+        <a class="btn text-white visitor-btn" id="visitor-btn">Tenant</a>
         <a class="btn text-white host-btn" id="host-btn">Host</a>
         <hr class="hr-style" style="    margin-left: 20px;">
       </div>
@@ -55,8 +55,7 @@
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
               <h5 class="section1-p-bold">Find your space</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <p class="section1-p">choose a day, time, place, and your budget and scroll through thousands of workspaces </p>
             </div>
           </div>
         </div>
@@ -68,8 +67,7 @@
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
               <h5 class="section1-p-bold">Book it</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <p class="section1-p">It has never been so simple. All you have to do is pay via PayPal and the office is waiting for you </p>
             </div>
           </div>
         </div>
@@ -81,8 +79,7 @@
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
               <h5 class="section1-p-bold">Have fun at work</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <p class="section1-p">Enjoy working in a place & time that fits exactly for your needs. You don’t pay when you're not there, and when your there its really cheap and convenient ! </p>
             </div>
           </div>
         </div>
@@ -97,9 +94,8 @@
               <img class="img-fluid section2-img" src="img/eclipse 1.PNG" alt="">
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
-              <h5 class="section1-p-bold">Find your space 1</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <h5 class="section1-p-bold">List your space</h5>
+              <p class="section1-p">Add the workspace you own to the platform and gain tremendous exposure from casual office tenants  </p>
             </div>
           </div>
         </div>
@@ -110,9 +106,8 @@
               <img class="img-fluid section2-img" src="img/eclipse 2.PNG" alt="">
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
-              <h5 class="section1-p-bold">Book it 1</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <h5 class="section1-p-bold">Wait for intrested tenants to contact</h5>
+              <p class="section1-p">provide some extra information about your office like where you plan to leave the key or parking arrangements in the area </p>
             </div>
           </div>
         </div>
@@ -123,9 +118,8 @@
               <img class="img-fluid section2-img" src="img/eclipse 3.PNG" alt="">
             </div>
             <div class="col-lg-10 col-md-9 col-10 section2-text">
-              <h5 class="section1-p-bold">Have fun at work 1</h5>
-              <p class="section1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-                tellus quis, porttitor </p>
+              <h5 class="section1-p-bold">Enjoy extra income</h5>
+              <p class="section1-p">Sit back, watch your extra space rented and enjoy extra income from a space you already own. Thank us later :)</p>
             </div>
           </div>
         </div>
@@ -144,20 +138,17 @@
       <div class="col-6 section-col">
         <div class="section3-padding">
           <h2 class="section3-heading">Revolution.</h2>
-          <p class="section3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-            tellus quis, porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus hendrerit et. Sed
-            lacinia finibus eros egestas eleifend. Curabitur sed dolor justo. Nullam facilisis tristique nisi, a
-            euismod risus lacinia quis. Nunc malesuada nisl sed</p>
+          <p class="section3-text">No more long-term and unaffordable rentals. There is no more geographical limitation. No more noisy cafes. No more working in the same place every day. The is no more money wasting. No more parking problems. No more crowded workspaces. There are no more unnecessary commitments. No more unproductive environments. No more bad coffee. No more office buildings.</p>
         </div>
       </div>
 
       <div class="col-6 section-col">
         <div class="section3-padding">
-          <h2 class="section3-heading">Sharing economy</h2>
-          <p class="section3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo diam, porta a
-            tellus quis, porttitor malesuada erat. Praesent eleifend nisl lorem, ut pharetra lacus hendrerit et. Sed
-            lacinia finibus eros egestas eleifend. Curabitur sed dolor justo. Nullam facilisis tristique nisi, a
-            euismod risus lacinia quis. Nunc malesuada nisl sed</p>
+          <h2 class="section3-heading">Sharing economy.</h2>
+          <p class="section3-text">Ourz established as a part of the cooperative economy model. Collaborative driving platforms, shared workspaces companies are just part of a new way of life. If its yours already, why not make other people feel for a while that it's their too ?
+This is our moto, and with it we run forward. Its hers, his, yours and theirs.
+Join us on this amazing journey, because it belongs to each and every one of us. its Ourz.
+</p>
         </div>
       </div>
 
@@ -174,25 +165,29 @@
           <p class="section9-p-bold mb-2" id="propertyIDModal" hidden></p>
           <p class="section9-p-bold mb-2" id="propertyNameModal"></p>
           <p class="section9-p mb-2" id="propertyDescriptionModal"></p>
+             <p class="section9-p-bold mb-2" id="propertyDateModal"></p>
+             <p class="section9-p-bold mb-2" id="propertyTimeModal"></p>
           <p class="section9-p-bold mb-2"><span id="propertyPeopleModal"></span> guests</p>
-          <input type="number" class="form-control mb-3" style="width: 80%;" id="room_hours_needed"
-            placeholder="Total Hours Needed " min="1" value="1">
+         
+          <!--<input type="number" class="form-control mb-3" style="width: 80%;" min="0.5" value="0.5" step="0.5" id="room_hours_needed" placeholder="Total Hours Needed ">
           <button id="propertyPaymentBtn" class="btn text-white custom-btn">Book for <span
-              id="propertyRateModal"></span>$/Hour</button>
+              id="propertyRateModal"></span>$/Hour</button>-->
+          
+          
         </div>
         <div class="col-6">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" id="imageItem1Modal">
                 <img id="imagePath1Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem2Modal">
                 <img id="imagePath2Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem3Modal">
                 <img id="imagePath3Modal" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="imageItem4Modal">
                 <img id="imagePath4Modal" class="d-block w-100" alt="...">
               </div>
             </div>
@@ -212,6 +207,8 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
 
 <?php include "footer.php" ?>
 
@@ -228,8 +225,10 @@
     })
 
     $("#host-btn").click(function () {
-      $("#visitor-section").hide();
       $("#host-section").show();
+      $("#visitor-section").hide();
+
+      
       $("#visitor-btn").removeClass("visitor-btn")
       $("#visitor-btn").addClass("host-btn")
 
