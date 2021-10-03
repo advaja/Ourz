@@ -146,9 +146,9 @@
         <div class="section3-padding">
           <h2 class="section3-heading">Sharing economy.</h2>
           <p class="section3-text">Ourz established as a part of the cooperative economy model. Collaborative driving platforms, shared workspaces companies are just part of a new way of life. If its yours already, why not make other people feel for a while that it's their too ?
-This is our moto, and with it we run forward. Its hers, his, yours and theirs.
-Join us on this amazing journey, because it belongs to each and every one of us. its Ourz.
-</p>
+				This is our moto, and with it we run forward. Its hers, his, yours and theirs.
+				Join us on this amazing journey, because it belongs to each and every one of us. its Ourz.
+		  </p>
         </div>
       </div>
 
@@ -169,11 +169,6 @@ Join us on this amazing journey, because it belongs to each and every one of us.
              <p class="section9-p-bold mb-2" id="propertyTimeModal"></p>
           <p class="section9-p-bold mb-2"><span id="propertyPeopleModal"></span> guests</p>
          
-          <!--<input type="number" class="form-control mb-3" style="width: 80%;" min="0.5" value="0.5" step="0.5" id="room_hours_needed" placeholder="Total Hours Needed ">
-          <button id="propertyPaymentBtn" class="btn text-white custom-btn">Book for <span
-              id="propertyRateModal"></span>$/Hour</button>-->
-          
-          
         </div>
         <div class="col-6">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

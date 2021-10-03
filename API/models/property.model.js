@@ -40,8 +40,6 @@ Property.add = function (property, files, result) {
     filesArray.push(files[key]);
   });
 
-  //console.log(filesArray)
-
   var filenames = [];
 
   for (let i = 0; i < filesArray.length; i++) {
@@ -97,9 +95,8 @@ Property.add = function (property, files, result) {
     function (err, res) {
       if (err) {
         result(null, err);
-      } else {
-        result(null, res);
       }
+      result(null, res);
     }
   );
 };

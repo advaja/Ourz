@@ -17,9 +17,9 @@
   <div class="row">
     <div class="col-12">
 
-      <h1 class="section10-heading" style="margin-bottom: 0px;text-align: center;">Welcom to Ourz Privacy Policy</h1>
+      <h1 class="section10-heading" style="margin-bottom: 0px;text-align: center;">Welcome to Ourz Privacy Policy</h1>
 
-      <p class="section10-p" style="margin-bottom: 0px;text-align: center;">Last updated: October 4, 2021</p>
+      <p class="section10-p" style="margin-bottom: 0px;text-align: center;">Last updated: October 3, 2021</p>
     </div>
 
   </div>
@@ -37,12 +37,11 @@
         <p>&nbsp;</p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span
-              style="font-size:14px"><strong>Introduction</strong></span></span></p>
+              style="font-size:14px"><strong>INTRODUCTION</strong></span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Welcome to Thunderstruck
-              Competitions Limited's privacy policy.&nbsp;</span></span></p>
+        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Welcome to Ourz INC privacy policy.&nbsp;</span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Thunderstruck Competitions
+        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Ourz
               Limited respects your privacy and is committed to protecting your personal data. This privacy policy will
               inform you as to how we process and look after your personal data when you visit our website (regardless
               of where you visit it from).&nbsp;</span></span></p>
@@ -50,25 +49,20 @@
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">It also tells you about
               your privacy rights and how the law protects you.&nbsp;</span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Please also use the
-              Glossary to understand the meaning of some of the terms used in this privacy policy.</span></span></p>
-
         <p>&nbsp;</p>
 
         <p><strong>&nbsp;1</strong><span style="font-family:Arial,Helvetica,sans-serif"><span
-              style="font-size:14px"><strong>.&nbsp;&nbsp; &nbsp;Important information and who we
-                are</strong></span></span></p>
+              style="font-size:14px"><strong>.&nbsp;&nbsp; &nbsp;IMPORTANT INFORMATION</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span
               style="font-size:14px"><strong>P</strong></span></span><span
-            style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>urpose of this privacy
+            style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>purpose of this privacy
                 policy</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">This privacy policy aims to
-              give you information on how Thunderstruck Competitions Limited collects and processes your personal data
-              through your use of this website, including any data you may provide through this website when you sign up
-              to our newsletter, purchase any products or services or take part in a prize draw or
-              competition.&nbsp;</span></span></p>
+              give you information on how Ourz INC collects and processes your personal data
+              through your use of this website.
+              &nbsp;</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">This website is not
               intended for children and we do not knowingly collect data relating to children.</span></span></p>
@@ -82,9 +76,8 @@
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span
               style="font-size:14px"><strong>Controller</strong></span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Thunderstruck Competitions
-              Limited is the controller and responsible for your personal data (collectively referred to as
-              "Thunderstruck Competitions Limited", "we", "us" or "our" in this privacy policy).</span></span></p>
+        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Ourz INC is the controller and responsible for your personal data (collectively referred to as
+              "Ourz INC", "we", "us" or "our" in this privacy policy).</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">We have appointed a data
               privacy manager who is responsible for overseeing questions in relation to this privacy policy. If you
@@ -99,27 +92,22 @@
               following ways:</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Full name of legal entity:
-              Thunderstruck Competitions Limited&nbsp;</span></span></p>
+              Ourz INC&nbsp;</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Email address:
-              info@thunderstruckcompetitions.com</span></span></p>
+              info@ourz.com</span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Postal address: Kemp House,
-              152 - 160 City Road, London EC1V 2NX</span></span></p>
+        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Postal address: Tel Aviv, Israrl</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Telephone number:
-              07867917901</span></span></p>
+              0123456789</span></span></p>
 
-        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">You have the right to make
-              a complaint at any time to the Information Commissioner's Office (ICO), the UK supervisory authority for
-              data protection issues (www.ico.org.uk). We would, however, appreciate the chance to deal with your
-              concerns before you approach the ICO so please contact us in the first instance.&nbsp;</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>Changes to the
                 privacy policy and your duty to inform us of changes</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">We keep our privacy policy
-              under regular review. This version was last updated on 17.2.21</span></span></p>
+              under regular review. This version was last updated on 3.10.21</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">It is important that the
               personal data we hold about you is accurate and current. Please keep us informed if your personal data
@@ -136,7 +124,7 @@
 
         <p><br>
           <span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>2.&nbsp;&nbsp;
-                &nbsp;The data we collect about you</strong></span></span></p>
+                &nbsp;DATA</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">Personal data, or personal
               information, means any information about an individual from which that person can be identified. It does
@@ -210,7 +198,7 @@
               notify you if this is the case at the time.&nbsp;</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>3.&nbsp;&nbsp;
-                &nbsp;How is your personal data collected?</strong></span></span></p>
+                &nbsp;HOW IS DATA COLLECTED</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">We use different methods to
               collect data from and about you including through:</span></span></p>
@@ -241,7 +229,7 @@
               EU;&nbsp;</span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px"><strong>4.&nbsp;&nbsp;
-                &nbsp;How we use your personal data</strong></span></span></p>
+                &nbsp;HOW WE USE DATA</strong></span></span></p>
 
         <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:14px">We will only use your
               personal data when the law allows us to. Most commonly, we will use your personal data in the following

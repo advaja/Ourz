@@ -20,10 +20,8 @@ User.login = function (user, result) {
       if (err) {
         console.log('error: ', err);
         result(err, null);
-      } else {
-        console.log('User : ', res);
-        result(null, res);
       }
+      result(null, res);
     }
   );
 };
@@ -36,10 +34,9 @@ User.update = function (user, result) {
       if (err) {
         console.log('error: ', err);
         result(null, err);
-      } else {
-        console.log('User: ', res);
-        result(null, res);
       }
+      console.log('User: ', res);
+      result(null, res);
     }
   );
 };
@@ -67,10 +64,9 @@ User.register = function (user, result) {
               if (err) {
                 console.log('error: ', err);
                 result(null, err);
-              } else {
-                console.log(res.insertId);
-                result(null, res);
               }
+              console.log(res.insertId);
+              result(null, res);
             }
           );
         }
